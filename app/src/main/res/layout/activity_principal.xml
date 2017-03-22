@@ -126,14 +126,16 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/btnMostar"
                     android:text="@string/sr_mostrar"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:onClick="MensajeInfo" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/btnLimpiar"
                     android:text="@string/sr_limpiar"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:onClick="Borrar" />
             </LinearLayout>
 
         </LinearLayout>
