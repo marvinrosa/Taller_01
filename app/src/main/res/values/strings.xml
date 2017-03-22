@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Taller_01</string>
+    <string name="sr_registroPersonas">REGISTRO DE PERSONAS</string>
+    <string name="sr_primerNombre">PRIMER NOMBRE</string>
+    <string name="sr_segundoNombre">SEGUNDO NOMBRE</string>
+    <string name="sr_primerApellido">PRIMER APELLIDO</string>
+    <string name="sr_segundoApellido">SEGUNDO APELLIDO</string>
+    <string name="sr_edad">EDAD</string>
+    <string name="sr_sexo">SEXO</string>
+    <string name="sr_mostrar">MOSTRAR</string>
+    <string name="sr_limpiar">LIMPIAR</string>
 </resources>
