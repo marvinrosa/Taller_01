@@ -42,7 +42,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="text|textPersonName"
                 android:ems="10"
                 android:id="@+id/txtPrimerNombre" />
 
@@ -56,7 +56,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="text|textPersonName"
                 android:ems="10"
                 android:id="@+id/txtSegundoNombre" />
 
@@ -70,7 +70,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="text|textPersonName"
                 android:ems="10"
                 android:id="@+id/txtPrimerApellido" />
 
@@ -84,7 +84,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="text|textPersonName"
                 android:ems="10"
                 android:id="@+id/txtSegundoApellido" />
 
@@ -98,9 +98,12 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|number"
                 android:ems="10"
-                android:id="@+id/txtEdad" />
+                android:id="@+id/txtEdad"
+                android:singleLine="false"
+                android:phoneNumber="false"
+                android:numeric="integer" />
 
             <TextView
                 android:text="@string/sr_sexo"
@@ -112,7 +115,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="textCapCharacters|textPersonName"
                 android:ems="10"
                 android:id="@+id/txtSexo" />
 

@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Taller_01</string>
+    // Activity Principal
+    <string name="app_name">TALLER_01</string>
     <string name="sr_registroPersonas">REGISTRO DE PERSONAS</string>
     <string name="sr_primerNombre">PRIMER NOMBRE</string>
     <string name="sr_segundoNombre">SEGUNDO NOMBRE</string>
@@ -9,8 +10,11 @@
     <string name="sr_sexo">SEXO</string>
     <string name="sr_mostrar">MOSTRAR</string>
     <string name="sr_limpiar">LIMPIAR</string>
-    <string name="sr_hola">Hola</string>
-    <string name="sr_tu">tu</string>
+    //Activity MostrarInfo
+    <string name="sr_hola"> Hola </string>
+    <string name="sr_tu"> tu edad es: </string>
+    <string name="sr_soy"> soy </string>
+    <string name="sr_sex"> y tu sexo es : </string>
     //Errores
     <string name="sr_error_1">Por favor digite el primer nombre</string>
     <string name="sr_error_2">Por favor digite el segundo nombre</string>

@@ -18,4 +18,6 @@
     <string name="sr_error_4">Please type your second lastname</string>
     <string name="sr_error_5">Please type your age</string>
     <string name="sr_error_6">Please type your sex</string>
+    <string name="sr_soy">"I'm "</string>
+    <string name="sr_sex">"your sex is: "</string>
 </resources>

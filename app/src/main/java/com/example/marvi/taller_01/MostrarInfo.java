@@ -20,16 +20,17 @@ public class MostrarInfo extends AppCompatActivity {
         setContentView(R.layout.activity_mostrar_info);
 
         mostrarMensaje = (TextView)findViewById(R.id.lblMostrar_Info);
+        b = getIntent().getExtras();
         nomb = b.getString("Nombre");
         segundoNom = b.getString("Segundo Nombre");
         primerApe = b.getString("Primer Apellido");
         segundoApe = b.getString("Segundo Apellido");
         eda = b.getString("Edad");
         sex = b.getString("Sexo");
+
         res = this.getResources();
 
-
-        aux = res.getString(R.string.sr_hola)+""+ nomb + ""+ segundoNom +""+ primerApe+ ""+ segundoApe + ""+ res.getString(R.string.sr_tu)+""+ eda + ""+ sex ;
+        aux = res.getString(R.string.sr_hola)+" \n"+ res.getString(R.string.sr_soy)+ nomb + ""+ segundoNom +""+ primerApe + ""+ segundoApe + " \n " +res.getString(R.string.sr_tu)+""+ eda + "\n"+ res.getString(R.string.sr_sex)+ sex ;
 
         mostrarMensaje.setText(aux);
     }
