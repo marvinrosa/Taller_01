@@ -10,4 +10,12 @@
     <string name="sr_segundoApellido">SECOND LASTNAME</string>
     <string name="sr_segundoNombre">SECOND NAME</string>
     <string name="sr_sexo">SEX</string>
+    <string name="sr_hola">Hello</string>
+    <string name="sr_tu">your</string>
+    <string name="sr_error_1">Please type your name</string>
+    <string name="sr_error_2">Please type your  second name</string>
+    <string name="sr_error_3">Please type your lastname</string>
+    <string name="sr_error_4">Please type your second lastname</string>
+    <string name="sr_error_5">Please type your age</string>
+    <string name="sr_error_6">Please type your sex</string>
 </resources>

@@ -9,4 +9,13 @@
     <string name="sr_sexo">SEXO</string>
     <string name="sr_mostrar">MOSTRAR</string>
     <string name="sr_limpiar">LIMPIAR</string>
+    <string name="sr_hola">Hola</string>
+    <string name="sr_tu">tu</string>
+    //Errores
+    <string name="sr_error_1">Por favor digite el primer nombre</string>
+    <string name="sr_error_2">Por favor digite el segundo nombre</string>
+    <string name="sr_error_3">Por favor digite el primer apellido</string>
+    <string name="sr_error_4">Por favor digite el segundo apellido</string>
+    <string name="sr_error_5">Por favor digite la edad</string>
+    <string name="sr_error_6">Por favor digite el sexo</string>
 </resources>

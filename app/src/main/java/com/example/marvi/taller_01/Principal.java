@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class Principal extends AppCompatActivity {
+public class Principal extends AppCompatActivity
+{
 
     private EditText cajaNomb,cajaSegundoNomb,cajaPrimerApell,cajaSegundoApell,cajaEdad, cajaSexo;
     private Bundle b;
@@ -33,13 +34,30 @@ public class Principal extends AppCompatActivity {
     public void MensajeInfo(View v)
     {
         String nomb ="",segundoNom="",primerApe ="",segundoApe="",edad="",sex="";
-        b.putString("Nombre",nomb);
-        b.putString("Segundo Nombre", segundoNom);
-        b.putString("Primer Apellido",primerApe);
-        b.putString("Segundo Apellido",segundoApe);
-        b.putString("Edad",edad);
-        b.putString("Sexo",sex);
 
+        if(validacion())
+        {
+
+            nomb = cajaNomb.getText().toString();
+            segundoNom = cajaSegundoNomb.getText().toString();
+            primerApe = cajaPrimerApell.getText().toString();
+            segundoApe = cajaSegundoApell.getText().toString();
+            edad = cajaEdad.getText().toString();
+            sex = cajaSexo.getText().toString();
+
+            b.putString("Nombre",nomb);
+            b.putString("Segundo Nombre", segundoNom);
+            b.putString("Primer Apellido",primerApe);
+            b.putString("Segundo Apellido",segundoApe);
+            b.putString("Edad",edad);
+            b.putString("Sexo",sex);
+
+            //Le paso al intent todos los datos en forma encapsulada con el bundle
+            i.putExtras(b);
+            //Arranco la actividad que le intent me diga
+            startActivity(i);
+
+        }
     }
 
     public void Borrar(View v)
@@ -55,6 +73,45 @@ public class Principal extends AppCompatActivity {
 
     }
 
+    public boolean validacion()
+    {
+        if(cajaNomb.getText().toString().isEmpty())
+        {
+            cajaNomb.setError(getResources().getString(R.string.sr_error_1));
+            return false;
+        }
+
+        if(cajaSegundoNomb.getText().toString().isEmpty())
+        {
+            cajaSegundoNomb.setError(getResources().getString(R.string.sr_error_2));
+            return false;
+        }
+
+        if(cajaPrimerApell.getText().toString().isEmpty())
+        {
+            cajaPrimerApell.setError(getResources().getString(R.string.sr_error_3));
+            return false;
+        }
+
+        if(cajaSegundoApell.getText().toString().isEmpty())
+        {
+            cajaSegundoApell.setError(getResources().getString(R.string.sr_error_4));
+            return false;
+        }
+
+        if(cajaEdad.getText().toString().isEmpty())
+        {
+            cajaEdad.setError(getResources().getString(R.string.sr_error_5));
+            return false;
+        }
+        if(cajaSexo.getText().toString().isEmpty())
+        {
+            cajaSexo.setError(getResources().getString(R.string.sr_error_6));
+            return false;
+        }
+
+        return true;
+    }
 
 
 }
