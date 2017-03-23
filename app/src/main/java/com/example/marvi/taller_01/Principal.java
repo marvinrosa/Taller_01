@@ -75,6 +75,7 @@ public class Principal extends AppCompatActivity
 
     public boolean validacion()
     {
+
         if(cajaNomb.getText().toString().isEmpty())
         {
             cajaNomb.setError(getResources().getString(R.string.sr_error_1));
@@ -102,6 +103,11 @@ public class Principal extends AppCompatActivity
         if(cajaEdad.getText().toString().isEmpty())
         {
             cajaEdad.setError(getResources().getString(R.string.sr_error_5));
+            return false;
+        }
+        if(Integer.parseInt(cajaEdad.getText().toString()) < 0 || Integer.parseInt(cajaEdad.getText().toString()) <=100)
+        {
+            cajaEdad.setError(getResources().getString(R.string.sr_error_5_1));
             return false;
         }
         if(cajaSexo.getText().toString().isEmpty())

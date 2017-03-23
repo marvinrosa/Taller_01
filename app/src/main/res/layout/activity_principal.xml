@@ -42,9 +42,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text|textPersonName"
+                android:inputType="textFilter"
                 android:ems="10"
-                android:id="@+id/txtPrimerNombre" />
+                android:id="@+id/txtPrimerNombre"
+                tools:inputType="textFilter" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -98,12 +99,12 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName|number"
                 android:ems="10"
                 android:id="@+id/txtEdad"
                 android:singleLine="false"
                 android:phoneNumber="false"
-                android:numeric="integer" />
+                android:numeric="integer"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:text="@string/sr_sexo"
